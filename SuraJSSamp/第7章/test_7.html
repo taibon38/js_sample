@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+    <script>
+    //test1_Q1
+        var obj ={
+            x : function(){console.log("こんにちは");}
+        }
+        obj.x() ; // 実行は、オブジェクト名.キー()
+    
+    //到達度チェック
+    //Q1
+        var item1 ={
+          price : 1000
+        };
+        var item2 ={
+          price:2000,
+          calcTax:function(){
+            console.log(this.price * 0.05);
+          }
+        };
+        item2.calcTax.call(item1) //メソッドの所有者を先に記入
+      
+      //Q2
+        //上記が実行されると、50が返ってくる。
+      
+      //Q3
+        var array = ["A","B","C"];
+        var str = array.join("/");
+        console.log(str); //結果：A/B/C
+        var result = str.split("/");
+        console.log(result); //結果：["A", "B", "C"]
+      
+      //Q4
+        var str = "money monday month common";
+        var words = str.match(/mon/g); //matchは、一致する部分を見つけ出し、配列で戻り値を返すメソッド
+        console.log(words); //結果：["mon", "mon", "mon", "mon"]
+        console.log(words.length);//結果:4
+
+      //Q5
+        var str = "friday saturday sunday";
+        var rep = str.replace(/day$/g,"flower");
+        console.log(rep); //結果:friday saturday sunflower  正規表現のパターンに＄がついているため、最後のdayのみ適応
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -4,9 +4,15 @@
     <meta charset="utf-8">
     <title>JavaScriptの練習</title>
     <script>
-      var today = new Date();
+      var today = new Date();//Dateオブジェクトの生成　var オブジェクト名 = new Date(年,月,日);
       console.log("今日は" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日です。");
-    </script>
+      
+      y = 2020
+      m = 7
+      d = 31
+      var birthday = new Date(y,m,d);
+      console.log("英の誕生日は、"+birthday.getFullYear()+"/"+birthday.getMonth()+"/"+birthday.getDate());
+   </script>
   </head>
   <body>
   </body>

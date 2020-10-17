@@ -13,7 +13,13 @@
       var obj2 = {
         name: "ユリ子"
       };
-      obj1.greet.call(obj2);
+      obj1.greet.call(obj2); //メソッドを所有するオブジェクト.メソッド名.call(メソッドを借りるオブジェクト)
+
+      var obj3 = {
+        name:"佐藤"
+      };
+      obj1.greet.call(obj3);
+
     </script>
   </head>
   <body>
