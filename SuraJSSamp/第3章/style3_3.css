@@ -1,3 +1,7 @@
 .paging {
-  font-size: 50px;
+  font-size: 30px;
+}
+
+.test{
+  font: red;
 }
