@@ -1,0 +1,10 @@
+﻿body {
+    height: 500px;
+    background-image: url("images/fish.jpg");      /* 背景画像の設定 */
+}
+#topbtn {
+    /* スクロールしても画像をウィンドウ右下に固定表示する設定 */
+    position: fixed; 
+    right: 10px;
+    bottom: 10px;
+}

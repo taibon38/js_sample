@@ -1,0 +1,9 @@
+﻿table, th, td {
+    padding: 0px 10px;
+    border-collapse: collapse;    /* セル間の間隔を開けない */
+    border: solid 1px black;      /* 実線、1px、黒の線を引く */
+}
+.highlight {
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>JavaScriptの練習</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#open").on("click", function() {
+          $("img").fadeIn("normal");
+        });
+        $("#close").on("click", function() {
+          $("img").fadeOut("normal");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <button id="open">展開する</button>
+      <button id="close">隠す</button>
+    </div>
+    <img src="images/frog1.jpg">
+  </body>
+</html>

@@ -1,0 +1,20 @@
+﻿body {
+    height: 2000px;
+}
+/* 画像の親要素 */
+div {
+    /* スクロールしても画像をウィンドウ左上に固定表示する設定 */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 300px;     /* 画像と同じ高さを設定 */
+}
+/* frog2.jpgを囲むdiv要素 */
+#under {
+    z-index: 1;        /* 背面に表示 */
+}
+/* frog1.jpgを囲むdiv要素 */
+#over {
+    z-index: 2;        /* 前面に表示 */
+    overflow: hidden;	
+}

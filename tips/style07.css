@@ -1,0 +1,23 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+/* ローディング画面 */
+#wall {
+    /* スクロールしてもウィンドウ全体に固定表示する設定 */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+/* ローディング画像 */
+.loading {
+    /* 画面中央に表示する設定 */
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -80px;
+}

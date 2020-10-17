@@ -1,0 +1,35 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+#photoFrame {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 50%;
+    margin: 30px 0px 30px -100px;    /* センタリング表示する設定 */
+    overflow: hidden;
+}
+/* スライドショー表示エリアの設定 */
+#imageArea {
+    position: absolute;
+    left: 0px;
+    width: 1000px;
+    height: 150px;
+    white-space: nowrap;
+}
+#imageArea img {
+    width: 200px;
+    height: 150px;
+}
+/* サムネイル画像表示エリアの設定 */
+#naviArea {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;    /* センタリング表示する設定 */
+    white-space: nowrap;
+}
+#naviArea img{
+    width: 80px;
+}

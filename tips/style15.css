@@ -1,0 +1,22 @@
+﻿/* アバター表示エリア */
+#avatar {
+    position: relative;
+    width: 140px;
+    height: 160px;
+    margin: 10px auto;
+}
+/* アバター表示エリア内の画像 */
+#avatar img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* 着替え画像一覧エリア */
+#clothes {
+    white-space: nowrap;
+}
+/* 着替え画像 */
+#clothes img {
+    width: 100px;	/* 縮小表示 */
+    border: solid 1px black;
+}

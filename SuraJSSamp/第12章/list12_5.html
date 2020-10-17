@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>JavaScriptの練習</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("p ~ a").css("font-size", "30px");
+      });
+    </script>
+  </head>
+  <body>
+    <p>ヘッダ</p>
+    <a href="prev.html">前ページへ</a>
+    <a href="next.html">次ページへ</a>
+    <p>
+      本文
+      <a href="index.html">TOPへ</a>
+    </p>
+  </body>
+</html>

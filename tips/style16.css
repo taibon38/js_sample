@@ -1,0 +1,32 @@
+﻿#content {
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 1px;    /* 上部に1px分の余白を取る */
+    border: solid 1px black;
+    z-index: 1;         /* 背面に表示 */
+}
+#tabArea {
+    height: 30px;
+    white-space: nowrap;
+    z-index: 2;        /* 前面に表示 */
+}
+.tab {
+    width: 80px;
+    height: 30px;
+    padding-left: 10px;
+    display: inline-block;         /* タブを横並びに表示する */
+    border: solid 1px black;
+    border-radius: 5px 5px 0 0;    /* タブの角を丸くする */
+    background-color: white;
+    cursor: pointer;               /* 手の形のカーソルにする */
+}
+.active {
+    border-bottom: solid 1px white;  /* タブの下線を白で表示 */
+}
+.tab span {
+    line-height: 30px;    /* 1行分の高さをタブの高さと同じにする */
+}
+.hidden {
+    display: none;
+}

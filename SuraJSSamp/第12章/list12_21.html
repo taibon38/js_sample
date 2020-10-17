@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>JavaScriptの練習</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("input[value='orange']").removeAttr("checked");
+      });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" name="fruits" value="apple" checked>りんご
+    <input type="checkbox" name="fruits" value="orange" checked>みかん
+    <input type="checkbox" name="fruits" value="strawberry" checked>いちご
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>JavaScriptの練習</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        console.log($("div").filter(".item").html());
+        console.log($("div").find(".item").html());
+      });
+    </script>
+  </head>
+  <body>
+    <div class="item">
+      <p>あいうえお</p>
+    </div>
+    <div>
+      <p class="item">かきくけこ</p>
+    </div>
+  </body>
+</html>

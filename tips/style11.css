@@ -1,0 +1,18 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    position: fixed;    /* ウィンドウ上部に固定表示する */
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+#nav ul{
+    list-style-type: none;    /* リストの行頭記号を表示しない */
+}
+#nav li {
+    float: left;              /* リストの要素を横並びにする */
+    padding: 5px 20px;
+}

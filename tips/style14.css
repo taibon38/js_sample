@@ -1,0 +1,26 @@
+﻿body {
+    padding: 20px;
+}
+/* 3つの画像の親要素 */
+.door {
+    position: relative;
+    width: 400px;
+    left: 200px;
+}
+.door img {
+    /* 各画像が親の<div>要素を基準とした相対配置となる */
+    position: absolute;
+    top: 0px;
+}
+#photo {
+    z-index: 1;      /* 背面に表示 */
+    left: 0px;
+}
+#left {
+    z-index: 2;      /* 前面に表示 */
+    left: 0px;       /* 左に配置 */
+}
+#right {
+    z-index: 2;      /* 前面に表示 */
+    left: 200px;     /* 右に配置 */
+}

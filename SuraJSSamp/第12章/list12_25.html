@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>JavaScriptの練習</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#btn").on("click", sayHello);
+      });
+      function sayHello() {
+        alert("こんにちは");
+        $("#btn").off("click", sayHello);
+      }
+    </script>
+  </head>
+  <body>
+    <button id="btn">クリック</button>
+  </body>
+</html>
