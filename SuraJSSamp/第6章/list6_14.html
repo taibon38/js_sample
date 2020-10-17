@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>JavaScriptの練習</title>
     <script>
-      var f = function() {
-        console.log("こんにちは");
+      var f = function(name) { //functionのあとの関数名を省略している
+        console.log(name+"さん、こんにちは");
+        alert(name+"さん、こんにちは");
       };
-      f();
+      f("佐藤"); //匿名関数 
     </script>
   </head>
   <body>

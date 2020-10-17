@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+    <script>
+//到達度チェック
+//Q1
+        function calcTriangle(base,height){
+            return base * height /2 ;
+        }
+        var area = calcTriangle(30,50);
+        console.log(area);
+
+//Q2
+        var n=parseFloat("10.5");
+        if(!isNaN(n)){
+            console.log("OK");
+        }else{
+            console.log("NG");
+            }
+
+//Q3
+        var x = 10;
+        function plus(){
+            x += 20;
+        }
+        plus();
+        console.log(x)
+        //結果:30
+
+//Q4
+        var x = 10;
+        function plus(x){
+            x += 20;
+        }
+        plus(x);
+        console.log(x)
+        //結果:10 plus関数の引数ｘはローカル変数。グローバル変数のxとは名前が同じだが別物。plus関数内での加算処理は、ローカル変数xに対して行っているため、グローバル変数xの値は変化しない。
+
+//Q5
+        function func(){
+            console.log("ABC");
+        }
+        var f = func ; //定義した関数を変数へ代入する場合は、関数名のみ指定する。
+        console.log(f());
+        //ABC
+
+//Q6
+        var f  = function(x){
+            console.log(x)
+        };
+        f("ABC");
+        //ABC
+
+//Q7
+        (function  (str){
+            console.log(str);
+        })("こんにちは");
+        // こんにちは
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
