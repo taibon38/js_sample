@@ -9,7 +9,7 @@
         document.getElementById("imageArea").innerHTML = htmlstr;
       }
       window.onload = function() {
-        document.getElementById("btn").onclick = function() {
+        document.getElementById("btn").onclick = function() { //引数numberを取れるため、ここで無名関数function()で包んでいる
           showImage(1);
         };
       };

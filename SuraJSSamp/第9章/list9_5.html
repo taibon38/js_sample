@@ -11,6 +11,7 @@
           alert("名を入力してください");
         } else if (!document.frm1.gender[0].checked && !document.frm1.gender[1].checked) {
           alert("性別を選択してください");
+          document.frm1.gender[0].checked = true; //男性を既定値として選択する場合の追記処理
         } else {
           document.frm1.submit();
         }
@@ -18,7 +19,7 @@
     </script>
   </head>
   <body>
-    <form name="frm1" action="xxx.html">
+    <form name="frm1" action="thankspage.html">
       <fieldset>
         <legend>名前</legend>
         <label>姓

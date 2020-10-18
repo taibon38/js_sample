@@ -6,15 +6,26 @@
     <script>
       function check() {
         var result = confirm("確認用のメッセージを表示します");
-        if (result) {
+        if (result) { 
           console.log("OK");
         } else {
           console.log("キャンセル");
         }
       }
+
+      function check2(){
+        var kekka = confirm("確認用のメッセージ");
+        if (kekka){
+          console.log("Trueです");
+        }else{
+          console.log("Falseです");
+        }
+      }
+
     </script>
   </head>
   <body>
     <button onclick="check();">クリック</button>
+    <button onclick="check2();">カーソルはここ</button>
   </body>
 </html>

@@ -13,17 +13,33 @@
         document.getElementById("ippan_area").className = "passive";
         document.getElementById("hojin_area").className = "active";
       }
+      function showTest(){
+        document.getElementById("ippan_area").className = "passive";
+        document.getElementById("hojin_area").className = "passive";
+        document.getElementById("test_area").className = "active";
+      }
     </script>
   </head>
   <body>
-    <input type="radio" name="target" value="i" onchange="showIppan();" checked>一般用
+    <input type="radio" name="target" value="i" onchange="showIppan();" checked>一般用 
+    <!-- //checkedで初期入力値を表している。 -->
     <input type="radio" name="target" value="h" onchange="showHojin();">法人用
+    <input type="radio" name="target" value="t" onchange="showTest()">テスト用
     <ul id="ippan_area" class="active">
       <li>氏名<input type="text" name="name"></li>
       <li>住所<input type="text" name="address"></li>
       <li>電話番号<input type="text" name="tel"></li>
     </ul>
     <ul id="hojin_area" class="passive">
+      <li>会社名<input type="text" name="company"></li>x
+      <li>部署名<input type="text" name="busho"></li>
+      <li>担当者名<input type="text" name="tanto"></li>
+      <li>住所<input type="text" name="address"></li>
+      <li>電話番号<input type="text" name="tel"></li>
+      <li>内線番号<input type="text" name="naisen"></li>
+    </ul>
+    <ul id="test_area" class="passive">
+      <li>テスト<input type="checkbox" name="test"></li>
       <li>会社名<input type="text" name="company"></li>
       <li>部署名<input type="text" name="busho"></li>
       <li>担当者名<input type="text" name="tanto"></li>

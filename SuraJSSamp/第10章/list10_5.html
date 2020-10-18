@@ -11,8 +11,9 @@
         }
         document.getElementById("imageArea").innerHTML = htmlstr;
       }
-      
-      document.getElementById("btn").onclick = showImage;
+      window.onload = function(){
+        document.getElementById("btn").onclick = showImage; //document.要素. イベントハンドラ = 定義済の関数名; で設定
+      };
     </script>
   </head>
   <body>

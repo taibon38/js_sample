@@ -10,6 +10,11 @@
           elm[i].value = "Hello!";
         }
       }
+
+      function setValue2() {
+        var elm2 = document.getElementsByName("tx1");
+        elm2[0].value = "ここだけ入力されるよ"; //指定した配列に入れることも可能
+      }
     </script>
   </head>
   <body>
@@ -17,5 +22,6 @@
     <input name="tx1" type="text">
     <input name="tx1" type="text">
     <button onclick="setValue();">クリック</button>
+    <button onclick="setValue2();">押す</button>
   </body>
 </html>

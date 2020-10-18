@@ -10,7 +10,7 @@
           htmlstr += "<img src='images/frog" + i + ".jpg'>";
         }
         document.getElementById("imageArea").innerHTML = htmlstr;
-        this.disabled = true;
+        this.disabled = true; //ボタンの無効化処理
       }
       window.onload = function() {
         document.getElementById("btn").onclick = showImage;

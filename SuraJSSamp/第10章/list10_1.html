@@ -8,6 +8,15 @@
         var elm = document.getElementById("tx1");
         elm.value = "Hello!";
       }
+
+      function setValue2(){
+        var e = document.getElementById ("tx2");
+        e.value = 'Good night!';
+      }
+
+      function setValue3(){
+        document.getElementById("tx3").value = "省略版"; //変数に代入せずとも記述可能
+      }
     </script>
   </head>
   <body>
@@ -15,5 +24,7 @@
     <input id="tx2" type="text">
     <input id="tx3" type="text">
     <button onclick="setValue();">クリック</button>
+    <button onclick="setValue2()">ここを押す</button>
+    <button onclick="setValue3()">押してくださいな</button>
   </body>
 </html>
