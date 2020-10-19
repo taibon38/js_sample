@@ -5,8 +5,15 @@
     <meta charset="utf-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
+      var p = {
+        color:"red",
+        fontSize:"30px",
+        "background-color":"black"
+      }
+
       $(function() {
         $("#fruits > li:contains('かん')").css("background-color", "red");
+        $("#fruits > li:contains('ぶ')").css(p);
       });
     </script>
   </head>

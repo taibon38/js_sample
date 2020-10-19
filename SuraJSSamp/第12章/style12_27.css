@@ -1,6 +1,11 @@
 .large {
   font-size: 30px;
 }
+
+.small {
+  font-size: 10px;
+}
+
 .highlight {
   color: white;
   background-color: red;

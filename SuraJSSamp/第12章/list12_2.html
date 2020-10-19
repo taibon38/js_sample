@@ -6,7 +6,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
       $(function() {
-        $("#parent > p").css("font-size", "30px");
+        $("#parent > p").css("font-size", "30px"); //子セレクタ
+        $("#parent  p").css("color","red"); //子孫セレクタ
+        $("#parent > div").css("font-size", "50px"); //子セレクタ
       });
     </script>
   </head>

@@ -7,8 +7,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
       $(function() {
-        $("input[name='target']").on("change", function(){
-          $("#ippan_area, #hojin_area").toggleClass("active passive");
+        $("input[name='target']").on("change", function(){ //イベント名,匿名関数
+          $("#ippan_area, #hojin_area").toggleClass("active passive"); //クラス名を複数指定する場合は、半角スペースで指定
         });
       });
     </script>

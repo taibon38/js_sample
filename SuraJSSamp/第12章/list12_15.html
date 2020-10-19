@@ -9,7 +9,12 @@
         var elm = $("#fruits > li");
         elm.css("background-color", "red");
         elm.filter(":even").css("color", "white");
+
+        var star = $("#hero > li ");
+        star.css("background-color","blue");
+        star.filter(":odd").css("color","red");
       });
+
     </script>
   </head>
   <body>
@@ -20,5 +25,13 @@
       <li>ぶどう</li>
       <li>いよかん</li>
     </ul>
+
+    <ol id="hero">
+      <li>アイアンマン</li> 
+      <li>スパイダーマン</li>
+      <li>ハルク</li>
+      <li>ソー</li>
+      <li>ブラックパンサー</li>
+    </ol>
   </body>
 </html>

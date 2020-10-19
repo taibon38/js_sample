@@ -9,11 +9,22 @@
         $("#btn").on("click", { name: "よしお" }, sayHello);
       });
       function sayHello(event) {
-        alert(event.data.name + "さん、こんにちは");
+        alert(event.data.name + "さん、こんにちは"); //event.data →キー.値
       }
+
+      $(function(){
+        $("#test").on("click",{name:'アイアンマン'},sayYo);
+
+        function sayYo(event2){
+          alert(event2.data.name + "かっけえ");
+        }
+
+      })      
     </script>
   </head>
   <body>
     <button id="btn">クリック</button>
+
+    <button id="test">クリック</button>
   </body>
 </html>

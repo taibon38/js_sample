@@ -7,16 +7,21 @@
     <script>
       $(function() {
         $("p + a").css("font-size", "30px");
+        $("p > a").css("color","red");
       });
     </script>
   </head>
   <body>
     <p>ヘッダ</p>
-    <a href="prev.html">前ページへ</a>
+    <a href="prev.html">前ページへ</a> 
+    <!-- //<p>の直後に出現 -->
+
     <a href="next.html">次ページへ</a>
     <p>
       本文
       <a href="index.html">TOPへ</a>
+      <!-- <p>の中に出現 -->
     </p>
+    <a href="index.html">大きくなります</a>
   </body>
 </html>
