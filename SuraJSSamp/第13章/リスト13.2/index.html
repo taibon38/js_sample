@@ -7,7 +7,7 @@
     <script>
       $(function() {
         $.getJSON("item.json",
-          function(data) {
+          function(data) { //item.jsonデータで取得した情報が引数としてdataに入っている。
             for(var i=0; i<data.length; i++) {
               $("#dataTable").append("<tr></tr>")
                 .find("tr:last")

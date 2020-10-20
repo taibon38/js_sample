@@ -7,10 +7,13 @@
     <script>
       $(function() {
         $("#open").on("click", function() {
-          $("#block").show("normal");
+          $("#block").show("fast");
         });
         $("#close").on("click", function() {
-          $("#block").hide("normal");
+          $("#block").hide("slow");
+        });
+        $("#repeat").on("click", function() {
+          $("#block").toggle("normal");
         });
       });
     </script>
@@ -20,6 +23,7 @@
     <div>
       <button id="open">展開する</button>
       <button id="close">隠す</button>
+      <button id="repeat">繰り返す</button>
     </div>
     <div id="block"></div>
   </body>
