@@ -10,10 +10,19 @@
           $("p").replaceWith("<img src='images/orange.png'></img>");
         });
       });
+      $(function() {
+        $("#btn2").on("click", function() { //id要素の「#つけ忘れがち」
+          $("li").replaceWith("<img src='images/orange.png'></img>");
+        });
+      });
+      
     </script>
   </head>
   <body>
     <button id="btn">クリック</button>
     <div><p>みかん</p></div>
+
+    <button id="btn2">押す</button>
+    <div><li>リスト</li></div>
   </body>
 </html>

@@ -7,7 +7,7 @@
       window.onload = func;
       function func() {
         var e = document.getElementById("fruits");
-        alert(e.childNodes.length);
+        alert(e.childNodes.length); //childNodesは、要素が持つ子要素を配列形式で表すもの
       }
     </script>
   </head>
@@ -19,3 +19,5 @@
     </ul>
   </body>
 </html>
+
+<!-- //結果は,7。IE9やchromeだと、改行も１つのテキスト要素として扱われるため。 -->

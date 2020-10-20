@@ -6,21 +6,22 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
       $(function() {
-        setSubCategory();
-        $("#main").on("change", setSubCategory);
+        setSubCategory(); //webページが表示された時の処理
+        $("#main").on("change", setSubCategory); //id=main のchangeイベントにsetSubCategory関数を登録
       });
       function setSubCategory() {
-        var subList = [
+        var subList = [ //二次元配列で格納。[0][1]→"タワー型"
           [ "ノート", "タワー型", "一体型" ],
-          [ "マウス", "キーボード", "モニタ", "スピーカー"]
+          [ "マウス", "キーボード", "モニタ", "スピーカー"],
+          ["keychron","mx-master3"]
         ];
 
-        var i = $("#main > option:selected").val();
+        var i = $("#main > option:selected").val(); //id = main(つまりmainカテゴリ)の中から、選択中(:selected)の項目を取得し、i変数へ代入。
 
-        var sub = $("#sub");
-        sub.empty();
+        var sub = $("#sub"); 
+        sub.empty(); //id = sub(つまりsubカテゴリ)の子要素をすべて削除。これ入れないと、メインカテゴリのchangeイベントが発生する度に項目が増える。
 
-        for(var j=0; j < subList[i].length; j++) {
+        for(var j=0; j < subList[i].length; j++) { //サブカテゴリーにセットする項目数文の繰り返し処理を実行
           sub.append("<option value='" + j + "'>" + subList[i][j] + "</option>");
         }
       }
@@ -31,6 +32,7 @@
     <select id="main">
       <option value="0">PC本体</option>
       <option value="1">PC周辺機器</option>
+      <option value="2">お気に入り</option>
     </select>
     <!-- サブカテゴリー -->
     <select id="sub">
