@@ -12,12 +12,20 @@
             "height" : "90%"
           }, 2000, "linear");
         });
+        $("#small").on("click", function() {
+          $("#photo").animate({
+            "width" : "20%",
+            "height" : "20%"
+          }, "nomal", "swing"); //出だしは遅く、後半は速め
+        });
+
       });
     </script>
   </head>
   <body>
     <div>
       <button id="large">拡大</button>
+      <button id="small">縮小</button>
     </div>
     <img src="images/frog1.jpg" id="photo" width="20%" height="20%">
   </body>

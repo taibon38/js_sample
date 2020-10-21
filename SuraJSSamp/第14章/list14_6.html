@@ -8,12 +8,15 @@
       $(function() {
         $("#large").on("click", function() {
           $("#photo").animate({
-            "width" : "90%",
-            "height" : "90%"
+            "width" : "50%",
+            "height" : "50%"
           }, 2000, "linear").animate({
             "width" : "20%",
             "height" : "20%"
-          }, 2000, "linear");
+          }, 2000, "linear").animate({
+            "width" : "90%",
+            "height":"90%"
+          },"fast","swing"); //メソッドチェーン（もとに戻る内容を追加。.で繋げれる。動きは連続的。)
         });
       });
     </script>

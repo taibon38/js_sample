@@ -14,14 +14,14 @@ $(function() {
   $("#prev").on("click", function() {
     if(parseInt(imageArea.css("left")) < 0) {
       toDisabled();
-      imageArea.animate({ "left" : "+=200px" }, "fast", "linear", toEnabled);
+      imageArea.animate({ "left" : "+=200px" }, "fast", "linear", toEnabled).animate({ "left" : "+=200px" }, "fast", "linear", toEnabled);//-400px戻る（animateを２つつなげているため）
     }
   });
 });
 
 function toDisabled() {
-  $("#prev, #next").attr("disabled", "disabled");
-}
+  $("#prev, #next").attr("disabled", "disabled"); //disabledを追加
+}//スライドショーが完了するまでは押せないようにする。
 function toEnabled() {
-  $("#prev, #next").removeAttr("disabled");
+  $("#prev, #next").removeAttr("disabled");//disabledを削除
 }
