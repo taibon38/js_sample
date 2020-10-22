@@ -3,6 +3,7 @@
   <head>
     <title>占いアプリ</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="uranai.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         var uranai = ['大吉','中吉','小吉','凶'];
@@ -10,13 +11,20 @@
 
       $(function() {
         $("#btn").on("click", function() {
-            $("p").replaceWith(uranai[n]).toggle();
+            $("p").text(uranai[n]);
+            $("p").addClass("kekka");
+        });
+        $("#btn2").on("click", function() {
+            window.location.reload();
         });
       });
     </script>
   </head>
   <body>
     <button id="btn">占う</button>
-    <div id="kekka"><p>占い結果はこちら</p></div>    
+    <button id="btn2">やり直す</button>
+    <div >
+      <p>占い結果はこちら</p>
+    </div>    
   </body>
 </html>
