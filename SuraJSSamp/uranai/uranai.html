@@ -6,13 +6,18 @@
     <link rel="stylesheet" type="text/css" href="uranai.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        var uranai = ['大吉','中吉','小吉','凶'];
+        var uranai = ['大吉','中吉','凶'];
         var n = Math.floor(Math.random() * uranai.length);
 
       $(function() {
         $("#btn").on("click", function() {
-            $("p").text(uranai[n]);
-            $("p").addClass("kekka");
+            if(n == 0){
+            $("p").text(uranai[n]).addClass("daikichi");
+            }else if (n==1){
+            $("p").text(uranai[n]).addClass("chukichi");
+            }else{
+            $("p").text(uranai[n]).addClass("kyo");
+            }
         });
         $("#btn2").on("click", function() {
             window.location.reload();
