@@ -2,25 +2,25 @@
 <html lang="ja">
   <head>
     <title>占いアプリ</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="uranai.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="uranai.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        var uranai = ['大吉','中吉','凶'];
-        var n = Math.floor(Math.random() * uranai.length);
+      var uranai = ["大吉", "中吉", "凶"];
+      var n = Math.floor(Math.random() * uranai.length);
 
-      $(function() {
-        $("#btn").on("click", function() {
-            if(n == 0){
+      $(function () {
+        $("#btn").on("click", function () {
+          if (n == 0) {
             $("p").text(uranai[n]).addClass("daikichi");
-            }else if (n==1){
+          } else if (n == 1) {
             $("p").text(uranai[n]).addClass("chukichi");
-            }else{
+          } else {
             $("p").text(uranai[n]).addClass("kyo");
-            }
+          }
         });
-        $("#btn2").on("click", function() {
-            window.location.reload();
+        $("#btn2").on("click", function () {
+          window.location.reload();
         });
       });
     </script>
@@ -28,8 +28,8 @@
   <body>
     <button id="btn">占う</button>
     <button id="btn2">やり直す</button>
-    <div >
+    <div>
       <p>占い結果はこちら</p>
-    </div>    
+    </div>
   </body>
 </html>
